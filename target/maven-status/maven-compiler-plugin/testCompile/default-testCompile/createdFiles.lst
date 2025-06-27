@@ -1,0 +1,3 @@
+AppHooks\ApplicationHooks.class
+testrunners\MyTestRunner.class
+stepdefinitions\SearchSteps.class

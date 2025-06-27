@@ -1,0 +1,276 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 31055350100,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I am on the NHS Jobs search page",
+            "match": {
+              "location": "stepdefinitions.SearchSteps.openSearchPage()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2025-06-27T04:03:38.969Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3033100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "AppHooks.ApplicationHooks.getProperty()"
+            }
+          },
+          {
+            "result": {
+              "duration": 1829001400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "AppHooks.ApplicationHooks.launchBrowser()"
+            }
+          }
+        ],
+        "line": 7,
+        "name": "Jobseeker searches for jobs using preferences and sorts by newest date",
+        "description": "",
+        "id": "nhs-jobs-search-functionality;jobseeker-searches-for-jobs-using-preferences-and-sorts-by-newest-date",
+        "after": [
+          {
+            "result": {
+              "duration": 4022300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "AppHooks.ApplicationHooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 642122700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "AppHooks.ApplicationHooks.quitBroswer()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 544402300,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I enter my preferences like \"nurse\" in keyword and \"London\" in location",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"nurse\"",
+                  "offset": 28
+                },
+                {
+                  "val": "\"London\"",
+                  "offset": 51
+                }
+              ],
+              "location": "stepdefinitions.SearchSteps.enterPreferences(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1774026600,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I click on the search button",
+            "match": {
+              "location": "stepdefinitions.SearchSteps.clickSearchButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 42971000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I should see a list of jobs that match my preferences",
+            "match": {
+              "location": "stepdefinitions.SearchSteps.verifyJobResults()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2060775100,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "the results should be sorted by the newest Date Posted",
+            "match": {
+              "location": "stepdefinitions.SearchSteps.verifySortedByNewestDate()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression"
+          },
+          {
+            "name": "@positive"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 31232808000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I am on the NHS Jobs search page",
+            "match": {
+              "location": "stepdefinitions.SearchSteps.openSearchPage()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2025-06-27T04:04:17.078Z",
+        "before": [
+          {
+            "result": {
+              "duration": 999100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "AppHooks.ApplicationHooks.getProperty()"
+            }
+          },
+          {
+            "result": {
+              "duration": 1062890900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "AppHooks.ApplicationHooks.launchBrowser()"
+            }
+          }
+        ],
+        "line": 14,
+        "name": "Jobseeker enters invalid characters in keyword and location fields",
+        "description": "",
+        "id": "nhs-jobs-search-functionality;jobseeker-enters-invalid-characters-in-keyword-and-location-fields",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "AppHooks.ApplicationHooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 424798600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "AppHooks.ApplicationHooks.quitBroswer()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 460615100,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I enter my preferences like \"@#$%\" in keyword and \"\" in location",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"@#$%\"",
+                  "offset": 28
+                },
+                {
+                  "val": "\"\"",
+                  "offset": 50
+                }
+              ],
+              "location": "stepdefinitions.SearchSteps.enterPreferences(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1647283200,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I click on the search button",
+            "match": {
+              "location": "stepdefinitions.SearchSteps.clickSearchButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 52049100,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "I should see a message or no results indicating invalid search",
+            "match": {
+              "location": "stepdefinitions.SearchSteps.verifyNoResultsOrErrorShown()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression"
+          },
+          {
+            "name": "@negative"
+          }
+        ]
+      }
+    ],
+    "name": "NHS Jobs Search Functionality",
+    "description": "",
+    "id": "nhs-jobs-search-functionality",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/AppFeatures/SearchPage.feature",
+    "tags": []
+  }
+]

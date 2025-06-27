@@ -1,0 +1,3 @@
+com\pages\SearchPage.class
+com\qa\factory\DriverFactory.class
+com\qa\util\ConfigReader.class
